@@ -1,0 +1,603 @@
+@font-face {
+    font-family: "TildaSans";
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TildaSans"),
+        /* Если не получилось, загрузит woff2 */
+    url("../fonts/TildaSans.woff2") format("woff2"),
+    url("../fonts/TildaSans.woff") format("woff");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'TildaSans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.main_section {
+    background: -webkit-linear-gradient(top, rgb(218, 62, 202), rgb(150, 91, 144));
+    height: 100vh;
+    color: #FFF;
+    position: relative;
+}
+
+.main_box {
+    display: table-cell;
+    vertical-align: middle;
+    height: 90vh;
+    width: 100vw;
+}
+
+.container_main {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.container_main > h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Arial;
+    margin-bottom: 60px;
+}
+
+.container_main > h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 24px 0 38px;
+}
+
+.container_main > p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.arrow_main {
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.arrow_box_main {
+    text-align: center;
+}
+
+.slogan {
+    padding-top: 150px;
+}
+
+.slogan_box {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.slogan_box > h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.slogan_box > h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.services {
+    padding-top: 150px;
+}
+
+.services_container {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services_card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #ecebeb;
+}
+
+.services_card:not(:last-child) {
+    border-bottom: 1px solid #000000;
+}
+
+.services_card > h2 {
+
+}
+
+.services_card > span {
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.services > h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    padding: 0 0 50px;
+}
+
+.card {
+    background-color: rgba(169, 91, 161, 0.6)
+}
+
+.concept {
+    padding: 230px 30px 0;
+}
+
+.concept_card > img{
+    max-width: 100px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.concept_card > h4 {
+    color: #de1bca;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 12px 0 25px;
+}
+
+.concept_card > span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.concept_container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.concept_card {
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.contacts {
+    padding-top: 250px;
+    padding-bottom: 100px;
+}
+
+.contact_card > a > img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.contact_card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_card > span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contact_cards_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts_cards {
+    padding: 90px 0;
+}
+
+.contacts_container {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.contact_cards_box:first-child {
+    padding: 0 0 70px;
+}
+
+.contacts_container > h2 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.reviews_card {
+    max-width: 660px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.reviews_container > h2 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.reviews_card {
+    padding: 70px 30px 0;
+    height: 520px;
+    text-align: center;
+}
+.reviews_image, .reviews_card img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    display: inline;
+}
+.reviews_text {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.reviews_name {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.reviews_profession {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+.reviews {
+    background-color: #de1bca;
+    padding: 100px 0 0 20px;
+}
+
+.reviews {
+    max-height: 800px;
+    height: 800px;
+}
+
+footer {
+    padding: 30px 20px;
+    color: #979797;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.show {
+    opacity:1;
+    transition: opacity 100ms ease-in-out;
+}
+.hide {
+    transition: opacity 100ms ease-in-out;
+    opacity:0;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slick-arrow {
+    margin-left: 20px;
+    height: 35px;
+    z-index: 2;
+}
+
+.slick-track {
+    width: 100vw;
+}
+
+.slick-next {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.reviews {
+    padding: 100px 30px 0;
+}
+
+@media (max-width:900px) {
+    .slick-next {
+        right: 0;
+    }
+    .slick-prev {
+        left: 0;
+    }
+    .reviews {
+        display: block;
+        max-height: 670px;
+        height: 670px;
+    }
+    .reviews_container {
+        padding-top: 75px;
+    }
+    .services_card {
+        display: block;
+        max-width: 350px;
+        height: 95px;
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid #000;
+    }
+    .services_card > h2, .services_card > span {
+        font-weight: 600;
+    }
+
+    .concept_container {
+        display: block;
+        align-items: center;
+        max-width: 320px;
+    }
+
+    .concept_card {
+        padding-bottom: 90px;
+    }
+
+    .concept_card >img {
+        margin-bottom: 0;
+    }
+
+    .concept_card > h4 {
+        padding-top: 0;
+    }
+
+    .contacts {
+        padding-top: 100px;
+    }
+
+    .contacts_cards {
+        padding: 60px 0;
+    }
+
+    .reviews {
+        padding: 0;
+    }
+
+    .contact_cards_box:first-child , .contact_cards_box {
+        display: block;
+        padding: 0;
+    }
+
+    .contact_card {
+        padding-bottom: 80px;
+    }
+
+    .contacts {
+        padding-bottom: 0;
+    }
+
+    .concept {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:630px) {
+    .reviews {
+        max-height: 690px;
+        height: 690px;
+    }
+    .slogan_box > h2 {
+        font-size: 35px;
+    }
+    .slogan_box > h3 {
+        font-size: 22px;
+    }
+    .reviews_card {
+        max-width: 530px;
+        width: 100%;
+    }
+    .reviews_card {
+        height: 555px;
+    }
+}
+@media (max-width:580px) {
+    .reviews_card {
+        max-width: 400px;
+        padding: 70px 30px 0;
+        height: 650px;
+    }
+    .reviews {
+        max-height: 800px;
+        height: 800px;
+    }
+}
+@media (max-width:435px) {
+    .slick-next {
+        opacity: 0;
+    }
+    .slick-prev {
+        opacity: 0;
+    }
+    .contacts {
+        padding-top: 70px;
+    }
+    .contacts_cards {
+        padding-bottom: 40px;
+    }
+    .concept {
+        padding-top: 120px;
+    }
+    .services {
+        padding-top: 20px;
+    }
+    .slogan {
+        padding-bottom: 90px;
+        padding-top: 100px;
+    }
+    .container_main > h1 {
+        font-size: 42px;
+    }
+    .container_main > p {
+        font-size: 18px;
+    }
+    .slogan_box > h2 {
+        font-size: 25px;
+    }
+    .slogan_box > h3 {
+        font-size: 18px;
+    }
+    .services_card > h2 {
+        font-size: 20px;
+    }
+    .services_card > span {
+        font-size: 18px;
+    }
+    .services_card {
+        max-width: 300px;
+        height: 87px;
+    }
+    .services > h2 {
+        font-size: 35px;
+    }
+    .contacts_container > h2 {
+        font-size: 35px;
+    }
+    .contact_card > span {
+        font-size: 20px;
+    }
+    .contact_card > a > img {
+        width: 80px;
+    }
+    .reviews_container > h2 {
+        font-size: 35px;
+    }
+    .reviews_text {
+        font-size: 18px;
+    }
+    .reviews_name {
+        font-size: 20px;
+    }
+    .reviews_container > h2 {
+        padding: 0 15px;
+    }
+}
+@media (max-width:400px) {
+    .reviews_card {
+        height: 570px;
+        padding-top: 30px;
+    }
+    .reviews {
+        max-height: 760px;
+        height: 760px;
+    }
+    .services_card {
+        height: 100%;
+    }
+
+}
+@media (max-width:350px) {
+    .reviews {
+        max-height: 825px;
+        height: 825px;
+    }
+    .reviews_card {
+        height: 630px;
+    }
+    .arrow_main {
+        height: 40px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+}
+@media (max-width:320px) {
+    footer {
+        font-size: 14px;
+    }
+    .reviews_text {
+        font-size: 16px;
+    }
+    .reviews_card {
+        height: 580px;
+    }
+    .reviews {
+        max-height: 770px;
+        height: 770px;
+    }
+
+}
+
+@media (max-width:320px) {
+
+}
+
+@media (max-width:300px) {
+    .services_card > h2 {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    .services_container {
+        padding: 0 10px;
+    }
+    .reviews_container > h2 {
+        font-size: 30px;
+    }
+    .container_main > h1 {
+        font-size: 38px;
+    }
+    .container_main > h2 {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: Arial;
+        margin-bottom: 50px;
+    }
+    .container_main > p {
+        font-size: 16px;
+    }
+    .slogan_box {
+        padding: 0 10px;
+    }
+    .reviews_card {
+        height: 600px;
+    }
+    .reviews {
+        max-height: 780px;
+        height: 780px;
+    }
+
+}
+
+@media (max-width:270px) {
+    .reviews_card {
+        height: 660px;
+    }
+    .reviews {
+        max-height: 845px;
+        height: 845px;
+    }
+    .arrow_main {
+        height: 45px;
+        width: 55px;
+        cursor: pointer;
+    }
+    .concept_card > h4 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:240px) {
+    .reviews_image, .reviews_card img {
+        height: 120px;
+        width: 120px;
+    }
+    .reviews_container > h2 {
+        font-size: 25px;
+    }
+}
+
